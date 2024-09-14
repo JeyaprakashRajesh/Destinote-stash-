@@ -8,5 +8,9 @@ export function createToken(email) {
 export function verifyToken(header) {
     const token = header.split("")[1]
     const email = jwt.decode(token).email
-
+    const verify = jwt.verify(token,KEY)
+    return ({
+        verify: verify,
+        email : email
+    })
 }
