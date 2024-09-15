@@ -1,5 +1,4 @@
-const { default: mongoose } = require("mongoose")
-const mongo = require("mongoose")
+import mongoose from "mongoose"
 
 try {
     mongoose.connect("mongodb://localhost:27017/DESTINOTE")
@@ -13,7 +12,7 @@ const userSkeleton = mongoose.Schema({
         type: String,
         required: true,
         trim: true,
-    },
+    }, 
     login: {
         type: String,
     },
