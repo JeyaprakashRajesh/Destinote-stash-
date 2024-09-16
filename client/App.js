@@ -8,7 +8,7 @@ import MainScreen from './screens/MainScreen';
 import * as Font from 'expo-font';
 import { useFonts } from 'expo-font';
 
-//this is the sample line
+
 export default function App() {
   const [screen, setScreen] = useState(null);
 
