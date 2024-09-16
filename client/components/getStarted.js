@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     subHeadingText: {
         fontSize: 25,
         letterSpacing: 1,
-        fontFamily: "poppins-regular",
+        fontFamily: "montserrat-regular",
         color: "#333333"
     },
     loginOrSignup: {
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     },
     loginOrSignupText: {
         color: "#708090",
-        fontFamily: "poppins-regular",
+        fontFamily: "montserrat-regular",
         fontSize: 12
     },
     loginOrSignupDivision: {
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
     },
     loginOrSignupDivisionButtonText: {
         color: "#ffffff",
-        fontFamily: "poppins-bold",
+        fontFamily: "montserrat-bold",
         fontSize: 16
     },
     otherOptions: {
@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
     },
     otherOptionsText: {
         color: "#708090",
-        fontFamily: "poppins-regular",
+        fontFamily: "montserrat-regular",
         fontSize: 12
     },
     otherOptionsDivision: {
