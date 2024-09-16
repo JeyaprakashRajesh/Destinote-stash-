@@ -11,7 +11,7 @@ export default function AuthScreen() {
     return (
 
         <Stack.Navigator
-            initialRouteName="GetStarted"
+            initialRouteName="Login"
             screenOptions={{
                 headerShown: false,
             }}
