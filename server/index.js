@@ -54,7 +54,13 @@ app.get("/getDetails", verifyMiddleware, async (req, res) => {
         const email = decoded.email;
         const { status, user } = await getDetails(email);
         if (status) {
-            res.status(200).json({ details: user });
+            res.status(200).json({
+                email : user.email,
+                favorites : user.favorites,
+                home : user.home,
+                userName : user.userName,
+                work : user.work
+             });
         } else {
             res.status(409).json({ message: "Unable to retrieve details" });
         }

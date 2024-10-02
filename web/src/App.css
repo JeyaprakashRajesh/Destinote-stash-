@@ -7,7 +7,7 @@ body {
 }
 
 .auth {
-    background: linear-gradient(135deg, #efd5ff 0%, #515ada 100%);
+    background: linear-gradient(135deg, #c4e0e5 , #4ca1af);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -58,14 +58,14 @@ body {
     margin-bottom: 10%;
     margin-left: 10%;
     margin-right: 10%;
-    background: rgba(255, 255, 255, 0.712);
+    background: rgba(255, 255, 255, 0.571);
     box-shadow: 0 8px 32px 0 #efd5ff70;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.348);
 }
-.login{
+.auth-component-content{
     height: 100%;
     width: 100%;
     display: flex;
@@ -73,14 +73,15 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "poppins";
+    
 }
-.login-heading{
+.auth-heading{
     font-size: 2vw;
     font-family: "Josefin Sans";
     margin-top: 10vh;
     margin-bottom: 2vh;
 }
-.login-form{
+.auth-form{
     margin-top: 3vh;
     margin-bottom: 3vh;
     width: 70%;
@@ -89,38 +90,38 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-.login-form-element{
+.auth-form-element{
     height: 10vh;
     margin-bottom: 2vh;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.login-form-element span {
+.auth-form-element span {
     height: 40%;
 }
-.login-form-element input {
+.auth-form-element input {
     height: 60%;
     padding: 5%;
     font-family: "poppins";
-    border: 2px solid #515ada;
+    border: 2px solid #4ca1af;
     border-radius: 10px;
     background-color: #ffffff94;
     font-size: 1.8vh;
 }
-.login-form-submit{
+.auth-form-submit{
     height: 8vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.login-form-submit button {
+.auth-form-submit button {
     margin-top: 1vh;
     height: 90%;
     width: 100%;
     border-radius: 25px;
-    background: #515adaa1;
+    background-color: #4ca1af;
     border: 2px white solid;
     color: white;
     font-family: "Josefin Sans";
@@ -130,14 +131,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
-.login-options{
+.auth-form-submit button:hover {
+    transform: scale(1.04);
+    
+}
+.auth-options{
     height: auto;
 }
-.login-options div {
+.auth-options div {
     font-size: 1vw;
 }
-.login-options  span {
+.auth-options  span {
     margin-left: 0.5vw;
     margin-right: 0.5vw;
     cursor: pointer;
