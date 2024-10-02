@@ -151,3 +151,202 @@ body {
     color: #585858;
     text-decoration: underline;
 }
+
+
+.home{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.homedetails{
+    height: calc(100% - 4vh);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    box-shadow: inset 0px -20px 10px rgba(244, 244, 244, 0.283);
+}
+.homedetails::-webkit-scrollbar {
+    display: none;
+}
+.homedetails-heading {
+    font-size: 40px;
+    background: linear-gradient(135deg, #a0d5de, #4ca1af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    width: 100%;
+    text-align: center;
+}
+.homedetails-search-conatainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homedetails-search{
+    width: 350px;
+    transition: height 2s ease-in-out;
+}
+.homedetails-search-container{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.homedetails-search-bar{
+    height: 100%;
+    margin-right: 10px;
+    width: calc(100% - 65px);
+    border: 1px solid #4ca1af;
+    box-shadow: 2px 2px 5px #4ca2afc6;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.homedetails-search-directions{
+    height: 50px;
+    width: 50px;
+    background-color: #4ca1af;
+    box-shadow: 2px 2px 5px #4ca2afc6;
+    border-radius: 25px;
+    background-image: url("./assets/direction.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.homedetails-search-directions:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+.homedetails-search-bar-icon{
+    height: 50px;
+    width: 50px;
+    background-image: url("./assets/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.homedetails-search-bar-input{
+    width: 210px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-family: "poppins";
+}
+.homedetails-search-results{
+    height: 200px;
+    width: 350px;
+    margin-top: 4vh;
+    border: 1px solid #4ca1af;
+    box-shadow: 2px 2px 5px #4ca2afc6;
+    border-radius: 25px;
+}
+.homedetails-shortcuts-container{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.homedetails-shortcuts{
+    height: 240px;
+    width: 350px;
+    border-radius: 25px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #4ca1af;
+}
+.homedetails-shortcuts-top{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #4ca1af;
+}
+.homedetails-shortcuts-favorites {
+    height: 50%;
+    width: 100%;
+    border-top: 1px solid #4ca1af;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    background-color: white; 
+    transition: background-color 0.3s ease-in-out
+}
+
+.homedetails-shortcuts-favorites:hover {
+    background-color: #c4e0e5; 
+    cursor: pointer;
+}
+.homedetails-shortcuts-top-home{
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #4ca1af;
+    background-color: white; 
+    transition: background-color 0.3s ease-in-out;
+    border-top-left-radius: 22px;
+}
+.homedetails-shortcuts-top-home:hover {
+    background-color: #c4e0e5; 
+    cursor: pointer;
+}
+.homedetails-shortcuts-top-work{
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid #4ca1af;    
+    background-color: white; 
+    transition: background-color 0.3s ease-in-out;
+    border-top-right-radius: 22px;
+}
+.homedetails-shortcuts-top-work:hover {
+    background-color: #c4e0e5; 
+    cursor: pointer;
+    
+}
+.homedetails-shortcuts-pic{
+    height: 65%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45px;
+}
+.homedetails-shortcuts-text{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "poppins";
+    font-weight: 500;
+}
+.homedetails-weather-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.homedetails-weather {
+    height: 100px;
+    width: 350px;
+    border: #4ca1af 2px solid;
+    margin-bottom: 5vh;
+    border-radius: 25px;
+}
+.map{
+    flex: 1;
+    height: 100%;
+    border-left: 1px solid #333333;
+}
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+}

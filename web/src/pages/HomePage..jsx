@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-
+import HomeDetails from "../components/HomeDetails";
+import Map from "../components/Map";
 export default function Home() {
     const [email, setEmail] = useState("");
     const [userName, setUserName] = useState("");
@@ -40,6 +41,11 @@ export default function Home() {
             });
         }
     }, [navigate]);
-
-   
+     
+   return(
+    <section className="home">
+        <HomeDetails />
+        <Map />
+    </section>
+   )
 }
