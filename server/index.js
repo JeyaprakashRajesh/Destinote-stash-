@@ -6,7 +6,7 @@ import { loginMiddleware, verifyMiddleware } from "./middlewares/middleware.js"
 import { createToken } from "./jwt/jwt.js"
 import { createUser, getDetails } from "./database/mongodb.js"
 
-const app = express()
+const app = express() 
 app.use(express.json())
 app.use(cors())
 const PORT = 8000
@@ -46,11 +46,11 @@ app.post("/signup", async (req, res) => {
 
 })
 
-app.get("/getDetails", verifyMiddleware, async (req, res) => {
+app.get("/getDetails", verifyMiddleware, async (req, res) => { 
     try {
         const header = req.headers["authorization"];
         const token = header.split(" ")[1];
-        const decoded = jwtDecode(token);
+        const decoded = jwtDecode(token);  
         const email = decoded.email;
         const { status, user } = await getDetails(email);
         if (status) {
