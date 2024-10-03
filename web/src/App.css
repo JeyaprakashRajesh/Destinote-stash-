@@ -388,19 +388,39 @@ body {
     bottom: 40px;
     right: 20px;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: end;    
 }
 .map-controls-type {
     height: 40px;
     width: 40px;
-    background: white;
+    background-color: white;
     border-radius: 25px;
     background-image: url("./assets/layersblue.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size:25px;
-    box-shadow: 2px 2px 3px #4ca1af ;
+    background-size: 25px;
+    box-shadow: 2px 2px 3px #4ca1af;
+    transition: all 0.3s ease !important;
+    margin: 10px;
 }
+
 .map-controls-type:hover {
-    background: linear-gradient(135deg, #c4e0e5 , #4ca1af);
-    background-image: url("./assets/layerswhite.png");
+    background-color: #4ca1af; 
+    background-image: url("./assets/layerswhite.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    box-shadow: 2px 2px 3px #4ca1af;
+    cursor: pointer;
+}
+.map-controls-pinLocation {
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
