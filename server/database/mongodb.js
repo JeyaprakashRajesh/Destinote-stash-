@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 
 try {
-    mongoose.connect("mongodb://localhost:27017/DESTINOTE")
+    mongoose.connect("mongodb://mongo:27017/DESTINOTE")
     console.log("mongo db connected sucessfully")
 } catch (err) {
     console.log("error connecting to mongo db")

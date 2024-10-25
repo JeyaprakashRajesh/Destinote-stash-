@@ -15,7 +15,7 @@ export default function Signup({ authStatus, setAuthStatus }) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        axios.post("http://localhost:8000/signup", {
+        axios.post("http://localhost:7000/signup", {
                 userName: name,
                 email: email,
                 password: password 

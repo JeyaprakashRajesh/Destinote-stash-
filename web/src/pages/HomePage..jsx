@@ -17,7 +17,7 @@ export default function Home() {
         if (!token) {
             navigate("/auth");
         } else {
-            axios.get("http://localhost:8000/getDetails", {
+            axios.get("http://localhost:7000/getDetails", {
                 headers: {
                     "authorization": `Bearer ${token}`
                 }

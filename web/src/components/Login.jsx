@@ -14,7 +14,7 @@ export default function Login({ authStatus, setAuthStatus }) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        axios.post("http://localhost:8000/login", {
+        axios.post("http://localhost:7000/login", {
                 email: email,
                 password: password
             })

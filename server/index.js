@@ -9,7 +9,7 @@ import { createUser, getDetails } from "./database/mongodb.js"
 const app = express() 
 app.use(express.json())
 app.use(cors())
-const PORT = 8000
+const PORT = 7000
 
 
 try {
@@ -24,6 +24,7 @@ app.post("/login", loginMiddleware, (req, res) => {
     try {
         const email = req.body.email
         const token = createToken(email)
+        console.log(token)
         res.status(200).json({ message: "login Sucessful", token: token })
     } catch (err) {
         console.log("error in axios : ", err)
@@ -53,6 +54,7 @@ app.get("/getDetails", verifyMiddleware, async (req, res) => {
         const decoded = jwtDecode(token);  
         const email = decoded.email;
         const { status, user } = await getDetails(email);
+        console.log(user)
         if (status) {
             res.status(200).json({
                 email : user.email,
